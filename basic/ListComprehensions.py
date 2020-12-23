@@ -1,3 +1,7 @@
+#
+# Solution to https://www.hackerrank.com/challenges/list-comprehensions/
+#
+
 def myfunction(x, y, z, n):
     myarray = []
     for i in range(0, x):
