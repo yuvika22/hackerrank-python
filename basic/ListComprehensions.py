@@ -1,5 +1,4 @@
 # Solution to https://www.hackerrank.com/challenges/list-comprehensions/
-# Code completed on 12/23/2020
 
 def myfunction(x, y, z, n):
     myarray = []
