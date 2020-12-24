@@ -6,16 +6,22 @@ def find_second_low(scores, names_scores):
 
 
 if __name__ == '__main__':
-      scores = [['c', 4.0], ['a', 2.0], ['b', 3.0], ['d', 5.0], ['f', 1.0], ['g', 2.0]]
+    scores = [37.21,  37.21, 37.2, 41, 39]
+    names_scores = [['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti', 41], ['Harsh', 39]]
 
-    for _ in range(int(input())):
-        name = input()
-        score = float(input())
-        scores.append([name, score])
-        names_scores.append([score, name])
+    # for _ in range(int(input())):
+    #     name = input()
+    #     score = float(input())
+    #     scores.append([score])
+    #     names_scores.append([score, name])
 
-        scores.sort()
-        names_scores.sort()
+    scores.sort()
+    names_scores.sort()
 
-    print(scores)
+    second_low = scores[1]
+
+    for student in names_scores:
+        if student[1] == second_low:
+            print("{}".format(student[0]))
+
 
