@@ -14,12 +14,15 @@ if __name__ == '__main__':
     for _ in range(int(input())):
         name = input()
         score = float(input())
-        scores.append(score)
+
+        if score not in scores:
+            scores.append(score)
         names_scores.append([name, score])
 
     names_scores.sort()
     scores.sort()
 
+    print(scores)
     second_Lowest = -1
     if len(scores) > 1:
         second_Lowest = scores[1]
