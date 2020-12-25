@@ -1,5 +1,5 @@
-def print_full_name(a, b):
-    print("Hello {} {}! You just delved into python.".format(a, b)
+def print_full_name(first_name, last_name):
+    print("Hello {} {}! You just delved into python.".format(a, b))
 
 
 if __name__ == '__main__':
